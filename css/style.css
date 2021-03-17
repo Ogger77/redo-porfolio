@@ -39,20 +39,6 @@
 /* end navigation */
 
 /* Banner Area */
-.site-main .site-banner img {
-  position: relative;
-  z-index: 1;
-}
-
-.site-main .site-banner .container-fluid {
-  position: relative;
-}
-
-.site-main .site-banner .container-test {
-  position: relative;
-  z-index: 5;
-}
-
 .site-main .site-banner .site-title h3 {
   padding-top: 35%;
   font-weight: 500;
