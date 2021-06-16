@@ -94,17 +94,17 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-12 site-title">
-              <h3 class="title-text">Welcome to my page</h3>
+              <h3 class="title-text">Hi,</h3>
               <h1 class="title-text text-uppercase">I am Dinh Vu</h1>
               <h4 class="title-text text-uppercase">Web/Mobile developer</h4>
               <div class="site-button">
                 <div class="d-flex flex-row flex-wrap">
-                  <button
-                    type="button"
+                  <a
+                    href="mailto:vud@kean.edu"
                     class="btn button primary-button mr-4 text-uppercase"
                   >
                     Hire me
-                  </button>
+                  </a>
                   <a
                     class="btn button secondary-button text-uppercase"
                     href="./plugin/Dinh_Vu_resume_final.pdf"
@@ -130,208 +130,238 @@
       <section class="about-area">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-6 col-md-12">
-              <div class="about-image">
+            <div class="col-lg-6 col-md-12 customcol">
+              <!-- <div class="col-1-of-2"> -->
+              <div class="composition">
                 <img
-                  src="./img/about-us.png"
-                  alt="About us"
-                  class="img-fluid"
+                  src="./img/about-us-1.jpg"
+                  alt="photo 1"
+                  class="composition__photo composition__photo--p1"
+                />
+                <img
+                  src="./img/about-us-2.jpg"
+                  alt="photo 1"
+                  class="composition__photo composition__photo--p2"
+                />
+                <img
+                  src="./img/about-us-3.jpg"
+                  alt="photo 1"
+                  class="composition__photo composition__photo--p3"
                 />
               </div>
             </div>
             <div class="col-lg-6 col-md-12 about-title">
               <!-- padding top 5 -->
-              <h2 class="text-uppercase pt-5">
-                <span>Let me</span>
-                <span>introduce</span>
-                <span>myself</span>
+              <h2 class="text-uppercase pt-5 pl-5">
+                <span>About me</span>
               </h2>
               <!-- padding bottom 4 , width 75% -->
-              <div class="paragraph py-4 w-75">
+              <div class="paragraph py-4 w-75 pl-5">
                 <p class="para">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                  assumenda omnis non eaque aut iste accusamus facere nam
-                  expedita! Ad.
+                  A young and energectic dev growing up in New Jersey.
+                  <br />
+                  Love flying drone and taking breathtaking scenenic from above.
                 </p>
                 <p class="para">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Obcaecati pariatur, voluptates iusto maxime vero quidem
-                  nesciunt quia blanditiis a hic, ipsa repudiandae dignissimos
-                  quaerat quae facere voluptatibus commodi repellat sequi.
+                  Experienced in develop monolith and microservice back-end
+                  server.
+                  <br />
+                  Created responsive and highly functional web-app with ease.
+                  <br />
+                  Familiar with docker and Kubernetes eco-system in producing
+                  large-scale app.
+                  <br />
+                  Interested in Flutter and seeking opportunity to further
+                  broaden experience.
                 </p>
+                <button
+                  type="button"
+                  class="btn button primary-button text-uppercase"
+                  data-toggle="modal"
+                  data-target="#customModal"
+                >
+                  My journey so far...
+                </button>
               </div>
-              <button
-                type="button"
-                class="btn button primary-button text-uppercase"
-              >
-                My journey so far...
-              </button>
             </div>
           </div>
         </div>
       </section>
       <!-- ENd about area -->
-      <!-- Brand Area -->
-      <section class="brand-area">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-xl-6 col-lg-12 col-md-12">
-              <div class="first-row row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="single-brand">
-                    <img src="./img/brands/logo1.png" alt="Brand-1" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="single-brand">
-                    <img src="./img/brands/logo2.png" alt="Brand-2" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="single-brand">
-                    <img src="./img/brands/logo3.png" alt="Brand-3" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="single-brand">
-                    <img src="./img/brands/logo4.png" alt="Brand-4" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="single-brand">
-                    <img src="./img/brands/logo5.png" alt="Brand-5" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="single-brand">
-                    <img src="./img/brands/logo6.png" alt="Brand-6" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="single-brand">
-                    <img src="./img/brands/logo7.png" alt="Brand-7" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="single-brand">
-                    <img src="./img/brands/logo8.png" alt="Brand-8" />
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                  <div class="single-brand">
-                    <img src="./img/brands/logo9.png" alt="Brand-9" />
-                  </div>
+
+      <!-- start modal area -->
+      <section class="modal-area">
+        <div
+          class="modal fade"
+          id="customModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                  <ul class="timeline">
+                    <li>
+                      <a class='job-title' href='#'>Junior web developer</a>
+                      <a href="https://www.kean.edu/" class="float-right">Kean University</a>                      
+                      <p class='para'>
+                        Improved the overall aesthetic of schoold's landing page.
+                        <br/>
+                        Added online-learning capability.
+                        <br/>
+                        Experimented with online speech 
+                        <a href='http://notetospeech.com/'>note-taking</a>
+                        web app throuhg the use of AWS Polly.
+                      </p>
+                    </li>
+                    <li>
+                      <a class='job-title' href="#">IT specialist</a>
+                      <a href="https://www.amazonfctours.com/EWR4" class="float-right">Amazon EWR4</a>
+                      <p class='para'>
+                        Overseered the warehouse's technology.
+                        <br/>
+                        Maintained and keep all the transportation pod in working order.
+                        <br/>
+                        Familiar with the AWS ecosystem. 
+                      </p>
+                    </li>
+                    <li>
+                      <a class='job-title' href="#">TEAL teacher</a>
+                      <a href="https://www.microsoft.com/en-us/teals" class="float-right">Microsoft TEAL</a>
+                      <p class='para'>
+                        Part of a community that bring computer science to every high school.
+                        <br/>
+                        Helped high school students familiar with coding concept by using Snap! and Python.
+                        <br/>
+                        This opportunity reinfored my passion and growth as a programer.
+                      </p>
+                    </li>
+                  </ul>
+                 
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-12 col-md-12">
-              <div class="experience-area">
-                <div class="d-flex flex-row years-area">
-                  <h2 class="p-3 years">2</h2>
-                  <h2>
-                    <span>Years</span>
-                    <span>Experience</span>
-                    <span>Working</span>
-                  </h2>
-                </div>
-                <div class="d-flex flex-row flex-wrap call-area">
-                  <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
-                  <div class="call-now">
-                    <a href="#" class="text-uppercase h4 font-roboto"
-                      >Call now
-                    </a>
-                    <span class="font-roboto py-2">(+1)-908-502-6197</span>
-                  </div>
-                </div>
-                <div class="bg-panel"></div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
-      <!-- end Brand Area -->
+      <!-- end modal area-->
 
       <!-- Start Services Area -->
       <section class="services-area">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 text-center services-title">
-              <h1 class="text-uppercase title-text">Services Offers</h1>
-              <p class="para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-                aliquid, explicabo sapiente quisquam delectus, dolor quas eius,
-                rerum iste consectetur unde.
-              </p>
+              <h1 class="text-uppercase title-text">My skill sets</h1>
             </div>
           </div>
-          <div class="container services-list">
-            <div class="row">
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="services">
-                  <div class="services-img text-center py-4">
-                    <img src="./img/services/s1.png" alt="Services-1" />
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title text-uppercase font-roboto">
-                      Web developer
-                    </h5>
-                    <p class="card-text text-secondary">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptatum, maiores?
-                    </p>
-                  </div>
-                </div>
-              </div>
+          
+          <!-- start skill tree -->
+          <div class="row justify-content-center">
+            <div class="tree">
+              <ul>
+                <li>
+                  <a class='btn button secondary-button'>Core programing</a>
+                  <ul>
+                    <li>
+                      <a class='btn button secondary-button'>Web development</a>
+                      <ul>
+                        <li>
+                          <a class='btn button secondary-button'>Front-end</a>
+                          <ul>
+                            <li>
+                              <a class='btn button secondary-button'>React</a>
+                            </li>
+                            <li>
+                              <a class='btn button secondary-button'>sass</a>
+                            </li>
+                            <li>
+                              <a class='btn button secondary-button'>Next.js</a>
+                            </li>
+                          </ul>  
+                       
+                        </li>
+                        <li>
+                          <a class='btn button secondary-button'>Back-end</a>
+                          <ul>
+                            <li>
+                              <a class='btn button secondary-button'>Node.js</a>
+                              <ul>
+                                <li>
+                                  <a class='btn button secondary-button'>TypeScript</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a class='btn button secondary-button'>express</a> 
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
 
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="services">
-                  <div class="services-img text-center py-4">
-                    <img src="./img/services/s2.png" alt="Services-2" />
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title text-uppercase font-roboto">
-                      Mobile app developer
-                    </h5>
-                    <p class="card-text text-secondary">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptatum, maiores?
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="services">
-                  <div class="services-img text-center py-4">
-                    <img src="./img/services/s3.png" alt="Services-3" />
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title text-uppercase font-roboto">
-                      Cloud computing
-                    </h5>
-                    <p class="card-text text-secondary">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptatum, maiores?
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="services">
-                  <div class="services-img text-center py-4">
-                    <img src="./img/services/s4.png" alt="Services-4" />
-                  </div>
-                  <div class="card-body text-center">
-                    <h5 class="card-title text-uppercase font-roboto">
-                      Business optimize
-                    </h5>
-                    <p class="card-text text-secondary">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptatum, maiores?
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+                    <!-- second branch -->
+                    <li>
+                      <a class='btn button secondary-button'>Mobile development</a>
+                        <ul>
+                          <a class='btn button secondary-button'>Flutter</a>
+                          <ul>
+                            <li>
+                              <a class='btn button secondary-button'>IOS</a>
+                            </li>
+                            <li>
+                              <a class='btn button secondary-button'>Android</a>
+                            </li>
+                          </ul>
+                        </ul>
+                    </li>
+                    <!-- 3rd branch -->
+                    <li>
+                      <a class='btn button secondary-button'>Server-side engineering</a>
+                      <ul>
+                        <li>
+                          <a class='btn button secondary-button'>Cloud computing</a>
+                          <ul>
+                            <li>
+                              <a class='btn button secondary-button'>AWS</a>
+                            </li>
+                            <li>
+                              <a class='btn button secondary-button'>Digital Ocean</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class='btn button secondary-button'>Microservice</a>
+                          <ul>
+                            <li>
+                              <a class='btn button secondary-button'>Docker</a>
+                              <ul>
+                                <a class='btn button secondary-button'>Kubernetes</a>
+                              </ul>
+                            </li>
+                            <li>
+                              <a class='btn button secondary-button'>NATS-streaming</a> 
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class='btn button secondary-button'>Block-chain</a>
+                          <ul>
+                            <a class='btn button secondary-button'>Solidity</a>
+                            <ul>
+                              <li>
+                                <a class='btn button secondary-button'>Ethereum</a>
+                              </li>
+                              <li>
+                                <a class='btn button secondary-button'>SmartContract</a>
+                              </li>
+                            </ul>
+                          </ul>
+                        </li>                        
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>                  
           </div>
         </div>
       </section>

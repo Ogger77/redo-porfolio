@@ -39,7 +39,7 @@ button.secondary-button::after {
   right: -2px;
   background: var(--gradient-color);
   content: "";
-  z-index: -2;
+  z-index: -1;
   border-radius: 4px;
 }
 
