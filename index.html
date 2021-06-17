@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="./css/responsive.css" />
     <title>Dinh Vu | Porfolio</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbarNav">
     <!-- Start header area -->
     <header class="header_area">
       <div class="main-menu">
@@ -48,7 +48,6 @@
             type="button"
             data-toggle="collapse"
             data-target="#navbarNav"
-            aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
@@ -57,28 +56,22 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <div class="mr-auto"></div>
             <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
+              <li class="nav-item">
+                <a class="nav-link active" href="#home"
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">about</a>
+                <a class="nav-link" href="#about">about</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">services</a>
+                <a class="nav-link" href="#skill">skill</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">portfolio</a>
+                <a class="nav-link" href="#projects">project</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">pages</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">contact</a>
+                <a class="nav-link" href="#contact">contact</a>
               </li>
             </ul>
           </div>
@@ -88,9 +81,9 @@
     <!-- End header area -->
 
     <!-- Start main area -->
+
     <main class="site-main">
-      <!-- Start banner area -->
-      <section class="site-banner">
+      <section class="site-banner" id="home">
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-md-12 site-title">
@@ -124,10 +117,10 @@
           </div>
         </div>
       </section>
-      <!-- End banner area -->
 
       <!-- About area -->
-      <section class="about-area">
+
+      <section class="about-area" id="about">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-6 col-md-12 customcol">
@@ -187,6 +180,7 @@
           </div>
         </div>
       </section>
+
       <!-- ENd about area -->
 
       <!-- start modal area -->
@@ -201,97 +195,112 @@
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-body">
-                  <ul class="timeline">
-                    <li>
-                      <a class='job-title' href='#'>Junior web developer</a>
-                      <a href="https://www.kean.edu/" class="float-right">Kean University</a>                      
-                      <p class='para'>
-                        Improved the overall aesthetic of schoold's landing page.
-                        <br/>
-                        Added online-learning capability.
-                        <br/>
-                        Experimented with online speech 
-                        <a href='http://notetospeech.com/'>note-taking</a>
-                        web app throuhg the use of AWS Polly.
-                      </p>
-                    </li>
-                    <li>
-                      <a class='job-title' href="#">IT specialist</a>
-                      <a href="https://www.amazonfctours.com/EWR4" class="float-right">Amazon EWR4</a>
-                      <p class='para'>
-                        Overseered the warehouse's technology.
-                        <br/>
-                        Maintained and keep all the transportation pod in working order.
-                        <br/>
-                        Familiar with the AWS ecosystem. 
-                      </p>
-                    </li>
-                    <li>
-                      <a class='job-title' href="#">TEAL teacher</a>
-                      <a href="https://www.microsoft.com/en-us/teals" class="float-right">Microsoft TEAL</a>
-                      <p class='para'>
-                        Part of a community that bring computer science to every high school.
-                        <br/>
-                        Helped high school students familiar with coding concept by using Snap! and Python.
-                        <br/>
-                        This opportunity reinfored my passion and growth as a programer.
-                      </p>
-                    </li>
-                  </ul>
-                 
-                </div>
+                <ul class="timeline">
+                  <li>
+                    <a class="job-title" href="#">Junior web developer</a>
+                    <a href="https://www.kean.edu/" class="float-right"
+                      >Kean University</a
+                    >
+                    <p class="para">
+                      Improved the overall aesthetic of schoold's landing page.
+                      <br />
+                      Added online-learning capability.
+                      <br />
+                      Experimented with online speech
+                      <a href="http://notetospeech.com/">note-taking</a>
+                      web app throuhg the use of AWS Polly.
+                    </p>
+                  </li>
+                  <li>
+                    <a class="job-title" href="#">IT specialist</a>
+                    <a
+                      href="https://www.amazonfctours.com/EWR4"
+                      class="float-right"
+                      >Amazon EWR4</a
+                    >
+                    <p class="para">
+                      Overseered the warehouse's technology.
+                      <br />
+                      Maintained and keep all the transportation pod in working
+                      order.
+                      <br />
+                      Familiar with the AWS ecosystem.
+                    </p>
+                  </li>
+                  <li>
+                    <a class="job-title" href="#">TEAL teacher</a>
+                    <a
+                      href="https://www.microsoft.com/en-us/teals"
+                      class="float-right"
+                      >Microsoft TEAL</a
+                    >
+                    <p class="para">
+                      Part of a community that bring computer science to every
+                      high school.
+                      <br />
+                      Helped high school students familiar with coding concept
+                      by using Snap! and Python.
+                      <br />
+                      This opportunity reinfored my passion and growth as a
+                      programer.
+                    </p>
+                  </li>
+                </ul>
               </div>
             </div>
+          </div>
+        </div>
       </section>
       <!-- end modal area-->
 
       <!-- Start Services Area -->
-      <section class="services-area">
+      <section class="services-area" id="skill">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 text-center services-title">
               <h1 class="text-uppercase title-text">My skill sets</h1>
             </div>
           </div>
-          
+
           <!-- start skill tree -->
           <div class="row justify-content-center">
             <div class="tree">
               <ul>
                 <li>
-                  <a class='btn button secondary-button'>Core programing</a>
+                  <a class="btn button secondary-button">Core programing</a>
                   <ul>
                     <li>
-                      <a class='btn button secondary-button'>Web development</a>
+                      <a class="btn button secondary-button">Web development</a>
                       <ul>
                         <li>
-                          <a class='btn button secondary-button'>Front-end</a>
+                          <a class="btn button secondary-button">Front-end</a>
                           <ul>
                             <li>
-                              <a class='btn button secondary-button'>React</a>
+                              <a class="btn button secondary-button">React</a>
                             </li>
                             <li>
-                              <a class='btn button secondary-button'>sass</a>
+                              <a class="btn button secondary-button">sass</a>
                             </li>
                             <li>
-                              <a class='btn button secondary-button'>Next.js</a>
+                              <a class="btn button secondary-button">Next.js</a>
                             </li>
-                          </ul>  
-                       
+                          </ul>
                         </li>
                         <li>
-                          <a class='btn button secondary-button'>Back-end</a>
+                          <a class="btn button secondary-button">Back-end</a>
                           <ul>
                             <li>
-                              <a class='btn button secondary-button'>Node.js</a>
+                              <a class="btn button secondary-button">Node.js</a>
                               <ul>
                                 <li>
-                                  <a class='btn button secondary-button'>TypeScript</a>
+                                  <a class="btn button secondary-button"
+                                    >TypeScript</a
+                                  >
                                 </li>
                               </ul>
                             </li>
                             <li>
-                              <a class='btn button secondary-button'>express</a> 
+                              <a class="btn button secondary-button">express</a>
                             </li>
                           </ul>
                         </li>
@@ -300,75 +309,93 @@
 
                     <!-- second branch -->
                     <li>
-                      <a class='btn button secondary-button'>Mobile development</a>
+                      <a class="btn button secondary-button"
+                        >Mobile development</a
+                      >
+                      <ul>
+                        <a class="btn button secondary-button">Flutter</a>
                         <ul>
-                          <a class='btn button secondary-button'>Flutter</a>
-                          <ul>
-                            <li>
-                              <a class='btn button secondary-button'>IOS</a>
-                            </li>
-                            <li>
-                              <a class='btn button secondary-button'>Android</a>
-                            </li>
-                          </ul>
+                          <li>
+                            <a class="btn button secondary-button">IOS</a>
+                          </li>
+                          <li>
+                            <a class="btn button secondary-button">Android</a>
+                          </li>
                         </ul>
+                      </ul>
                     </li>
                     <!-- 3rd branch -->
                     <li>
-                      <a class='btn button secondary-button'>Server-side engineering</a>
+                      <a class="btn button secondary-button"
+                        >Server-side engineering</a
+                      >
                       <ul>
                         <li>
-                          <a class='btn button secondary-button'>Cloud computing</a>
+                          <a class="btn button secondary-button"
+                            >Cloud computing</a
+                          >
                           <ul>
                             <li>
-                              <a class='btn button secondary-button'>AWS</a>
+                              <a class="btn button secondary-button">AWS</a>
                             </li>
                             <li>
-                              <a class='btn button secondary-button'>Digital Ocean</a>
+                              <a class="btn button secondary-button"
+                                >Digital Ocean</a
+                              >
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <a class='btn button secondary-button'>Microservice</a>
+                          <a class="btn button secondary-button"
+                            >Microservice</a
+                          >
                           <ul>
                             <li>
-                              <a class='btn button secondary-button'>Docker</a>
+                              <a class="btn button secondary-button">Docker</a>
                               <ul>
-                                <a class='btn button secondary-button'>Kubernetes</a>
+                                <a class="btn button secondary-button"
+                                  >Kubernetes</a
+                                >
                               </ul>
                             </li>
                             <li>
-                              <a class='btn button secondary-button'>NATS-streaming</a> 
+                              <a class="btn button secondary-button"
+                                >NATS-streaming</a
+                              >
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <a class='btn button secondary-button'>Block-chain</a>
+                          <a class="btn button secondary-button">Block-chain</a>
                           <ul>
-                            <a class='btn button secondary-button'>Solidity</a>
+                            <a class="btn button secondary-button">Solidity</a>
                             <ul>
                               <li>
-                                <a class='btn button secondary-button'>Ethereum</a>
+                                <a class="btn button secondary-button"
+                                  >Ethereum</a
+                                >
                               </li>
                               <li>
-                                <a class='btn button secondary-button'>SmartContract</a>
+                                <a class="btn button secondary-button"
+                                  >SmartContract</a
+                                >
                               </li>
                             </ul>
                           </ul>
-                        </li>                        
+                        </li>
                       </ul>
                     </li>
                   </ul>
                 </li>
               </ul>
-            </div>                  
+            </div>
           </div>
         </div>
       </section>
       <!-- End Services Area -->
 
       <!-- Project area -->
-      <section class="project-area">
+      <section class="project-area" id="projects">
         <div class="container">
           <div class="project-title pb-5">
             <h1 class="text-uppercase title-h1">Recently Done Project</h1>
@@ -446,101 +473,8 @@
       </section>
       <!-- ENd project area -->
 
-      <!-- client review -->
-      <section class="about-area">
-        <div class="contaienr">
-          <div class="row text-center">
-            <div class="col-12">
-              <div class="about-title">
-                <h1 class="text-upperccase title-h1">
-                  Satisfaction Client Review
-                </h1>
-                <p class="para">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non
-                  pariatur, officiis aliquam maxime iste expedita. Vel,
-                  temporibus aliquid! Dolore, culpa. Dicta!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container carousel py-lg-5">
-          <div class="owl-carousel owl-theme">
-            <div class="client row">
-              <div class="col-lg-4 col-md-12 client-img">
-                <img
-                  src="./img/testimonials/t1.jpg"
-                  alt="img1"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-lg-8 col-md-12 about-client">
-                <h4 class="text-uppercase">John Doe</h4>
-                <p class="para">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Nesciunt nam quis dolorum necessitatibus sapiente voluptate
-                  deserunt reprehenderit, voluptas explicabo! Rem.
-                </p>
-              </div>
-            </div>
-            <div class="client row">
-              <div class="col-lg-4 col-md-12 client-img">
-                <img
-                  src="./img/testimonials/t2.jpg"
-                  alt="img2"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-lg-8 col-md-12 about-client">
-                <h4 class="text-uppercase">John Smith</h4>
-                <p class="para">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Nesciunt nam quis dolorum necessitatibus sapiente voluptate
-                  deserunt reprehenderit, voluptas explicabo! Rem.
-                </p>
-              </div>
-            </div>
-            <div class="client row">
-              <div class="col-lg-4 col-md-12 client-img">
-                <img
-                  src="./img/testimonials/t1.jpg"
-                  alt="img1"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-lg-8 col-md-12 about-client">
-                <h4 class="text-uppercase">John Doe</h4>
-                <p class="para">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Nesciunt nam quis dolorum necessitatibus sapiente voluptate
-                  deserunt reprehenderit, voluptas explicabo! Rem.
-                </p>
-              </div>
-            </div>
-            <div class="client row">
-              <div class="col-lg-4 col-md-12 client-img">
-                <img
-                  src="./img/testimonials/t2.jpg"
-                  alt="img2"
-                  class="img-fluid"
-                />
-              </div>
-              <div class="col-lg-8 col-md-12 about-client">
-                <h4 class="text-uppercase">John Smith</h4>
-                <p class="para">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Nesciunt nam quis dolorum necessitatibus sapiente voluptate
-                  deserunt reprehenderit, voluptas explicabo! Rem.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end client review -->
-
       <!-- Subscribe me area -->
-      <section class="subscribe-us-area">
+      <section class="subscribe-us-area" id="contact">
         <div class="container subscribe">
           <div class="row">
             <div class="col-lg-12 text-center subscribe-title">

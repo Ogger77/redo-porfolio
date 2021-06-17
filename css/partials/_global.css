@@ -87,3 +87,8 @@ button:active button:hover .btn:active,
   z-index: 999;
   transition: background 1s ease;
 }
+
+.nav-link.active,
+nav-link:hover {
+  color: var(--primary-color) !important;
+}
