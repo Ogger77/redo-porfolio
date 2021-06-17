@@ -72,20 +72,20 @@
 }
 /* end About area */
 
-/* start Services area */
-.site-main .services-area {
+/* start skill area */
+.site-main .skill-area {
   padding: 7rem 0;
 }
 
-.site-main .services-area .services-title {
+.site-main .skill-area .skill-title {
   padding: 0 14rem;
 }
 
-.site-main .services-area .services-title h1 {
+.site-main .skill-area .skill-title h1 {
   font-size: 35px;
 }
 
-/* end Services area */
+/* end skill area */
 
 /* start Project area */
 .site-main .project-area {
@@ -153,54 +153,41 @@
 }
 /* end About me */
 
-/* subscribe area */
-.site-main .subscribe-us-area .subscribe {
-  background: url(../img/subscribe-bg.png) no-repeat;
+/* contact area */
+.site-main .contact-us-area .contact {
+  /* background: url(../img/subscribe-bg.png) no-repeat; */
+  /* background-image: var(--gradient-color); */
   padding: 10rem 0;
   margin: 4rem auto;
 }
 
-.site-main .subscribe-us-area .subscribe .subscribe-title h4 {
+.site-main .contact-us-area .contact .contact-title h4 {
   font: normal 700 30px/30px var(--roboto);
-  color: whitesmoke;
+  /* color: whitesmoke; */
 }
 
-.site-main .subscribe-us-area .subscribe .subscribe-title p {
-  color: whitesmoke;
+.site-main .contact-us-area .contact .contact-title p {
+  /* color: whitesmoke; */
   padding: 1rem 4rem;
 }
 
-.site-main .subscribe-us-area .subscribe form .input-textbox input {
+.site-main .contact-us-area .contact form .input-textbox input {
   width: 400px;
   padding: 1.5rem 1rem;
-  border: 1px solid whitesmoke;
+  border: 1px solid;
   background: transparent;
-  color: white;
+  /* color: white; */
   font: normal 500 17px/20px var(--roboto);
 }
 
-.site-main
-  .subscribe-us-area
-  .subscribe
-  form
-  .input-textbox
-  input::placeholder {
-  color: whitesmoke;
-}
-
-.site-main .subscribe-us-area .subscribe form .btn-submit button {
+.site-main .contact-us-area .contact form .btn-submit button {
   background-color: whitesmoke;
   color: #000;
   padding: 0.7rem 2rem;
 }
-/* end subscribe area */
+/* end contact area */
 
 /* start footer area */
-footer.footer-area {
-  padding: 5rem 0;
-  background: url(../img/footer-bg.png) no-repeat;
-}
-
 footer.footer-area .social h5 {
   font: normal 500 23px/30px var(--roboto);
 }
@@ -318,6 +305,9 @@ ul.timeline a {
 /* end timeline */
 
 /* start skill tree */
+.tree {
+  padding-top: 3rem;
+}
 
 .tree ul {
   margin: 0;
@@ -417,3 +407,86 @@ ul.timeline a {
 }
 
 /* end skill tree */
+
+/* start wave */
+
+.headerWave {
+  position: relative;
+  text-align: center;
+  background: white;
+  color: var(--title-color);
+}
+
+.inner-header {
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px; /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px;
+}
+
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: rgb(239, 65, 42);
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 40px;
+    min-height: 40px;
+  }
+  .content {
+    height: 30vh;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
