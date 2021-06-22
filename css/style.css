@@ -111,6 +111,24 @@
 .site-main .project-area .grid .our-project .img a:hover img {
   filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
 }
+
+.underline:before {
+  content: "";
+  border-bottom: 1px solid var(--primary-color);
+  padding: 0 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  transition: 0.3s;
+}
+.underline:hover:before {
+  width: 100%;
+  padding: 0;
+}
+
 /* end Project area */
 
 /* About me */
