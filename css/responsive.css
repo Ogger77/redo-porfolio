@@ -2,11 +2,13 @@
 @media only screen and (max-width: 340px) {
   .header_area .main-menu .navbar,
   .header_area .main-menu .navbar .navbar-brand,
-  .site-main .contact-area .contact .contact-title,
-  .site-main .contact-area .contact .contact-title p,
+  .site-main .contact .contact-title,
+  .site-main .contact .contact-title p,
   h4,
   .site-main .services-area,
-  .site-main .contact-area .contact {
+  .site-main .contact-area .contact,
+  .skill-area,
+  .tree {
     padding: 2%;
     margin: 0%;
   }
@@ -59,6 +61,19 @@
   }
 
   .about-area .row .customcol {
+    display: none;
+  }
+  .navbar {
+    padding: 0 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .tree-small {
+    display: block;
+  }
+
+  .tree-full {
     display: none;
   }
 }

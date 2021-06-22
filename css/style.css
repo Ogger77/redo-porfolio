@@ -290,6 +290,11 @@ ul.timeline a {
 /* end timeline */
 
 /* start skill tree */
+
+.tree-small {
+  display: none;
+}
+
 .tree {
   padding-top: 3rem;
 }
