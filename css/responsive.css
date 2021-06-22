@@ -2,11 +2,11 @@
 @media only screen and (max-width: 340px) {
   .header_area .main-menu .navbar,
   .header_area .main-menu .navbar .navbar-brand,
-  .site-main .subscribe-us-area .subscribe .subscribe-title,
-  .site-main .subscribe-us-area .subscribe .subscribe-title p,
+  .site-main .contact-area .contact .contact-title,
+  .site-main .contact-area .contact .contact-title p,
   h4,
   .site-main .services-area,
-  .site-main .subscribe-us-area .subscribe {
+  .site-main .contact-area .contact {
     padding: 2%;
     margin: 0%;
   }
@@ -15,7 +15,7 @@
     font-size: 41px;
   }
 
-  .site-main .subscribe-us-area .subscribe form .input-textbox input {
+  .site-main .contact-area .contact form .input-textbox input {
     width: 15rem !important;
   }
 
@@ -53,7 +53,7 @@
     padding: 0%;
   }
 
-  .site-main .subscribe-us-area .subscribe form .input-textbox input {
+  .site-main .contact-area .contact form .input-textbox input {
     width: 20rem;
     margin: 5%;
   }
