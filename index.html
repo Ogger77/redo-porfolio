@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- font awsome icons -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- Magnific popup -->
+    <link
+      rel="stylesheet"
+      href="./plugin/Magnific-Popup/dist/magnific-popup.css"
+    />
+
+    <!-- owl carousle -->
+    <link
+      rel="stylesheet"
+      href="./plugin/OwlCarousel2-2.3.4/css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./plugin/OwlCarousel2-2.3.4/css/owl.theme.default.min.css"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <!-- responsive css -->
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css" />
+    <title>Dinh Vu | Portfolio</title>
+  </head>
+  <body data-spy="scroll" data-target="#navbarNav">
+    <!-- Start header area -->
+    <header class="header_area">
+      <div class="main-menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#"
+            ><img src="./img/logo.png" alt="Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skill">skill</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End header area -->
+
+    <!-- Start main area -->
+
+    <main class="site-main">
+      <section class="site-banner" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 site-title">
+              <h3 class="title-text">Hi,</h3>
+              <h1 class="title-text text-uppercase">I am Dinh Vu</h1>
+              <h4 class="title-text text-uppercase">Web/Mobile developer</h4>
+              <div class="site-button">
+                <div class="d-flex flex-row flex-wrap">
+                  <a
+                    href="mailto:vud@kean.edu"
+                    class="btn button primary-button mr-4 text-uppercase"
+                  >
+                    Hire me
+                  </a>
+                  <a
+                    class="btn button secondary-button text-uppercase"
+                    href="./plugin/Dinh_Vu_resume_final1.pdf"
+                  >
+                    Get my resume
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 banner-image">
+              <img
+                src="./img/banner/banner.png"
+                alt="banner-img"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About area -->
+
+      <section class="about-area" id="about">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 customcol">
+              <!-- <div class="col-1-of-2"> -->
+              <div class="composition">
+                <img
+                  src="./img/about-us-1.jpg"
+                  alt="photo 1"
+                  class="composition__photo composition__photo--p1"
+                />
+                <img
+                  src="./img/about-us-2.jpg"
+                  alt="photo 1"
+                  class="composition__photo composition__photo--p2"
+                />
+                <img
+                  src="./img/about-us-3.jpg"
+                  alt="photo 1"
+                  class="composition__photo composition__photo--p3"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 about-title">
+              <!-- padding top 5 -->
+              <h2 class="text-uppercase pt-5 pl-5">
+                <span>About me</span>
+              </h2>
+              <!-- padding bottom 4 , width 75% -->
+              <div class="paragraph py-4 w-75 pl-5">
+                <p class="para">
+                  A young and energectic dev growing up in New Jersey.
+                  <br />
+                  Love flying drone and taking breathtaking scenenic from above.
+                </p>
+                <p class="para">
+                  Experienced in develop monolith and microservice back-end
+                  server.
+                  <br />
+                  Created responsive and highly functional web-app with ease.
+                  <br />
+                  Familiar with docker and Kubernetes eco-system in producing
+                  large-scale app.
+                  <br />
+                  Interested in Flutter and seeking opportunity to further
+                  broaden my experience.
+                </p>
+                <button
+                  type="button"
+                  class="btn button primary-button text-uppercase"
+                  data-toggle="modal"
+                  data-target="#customModal"
+                >
+                  My journey so far...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ENd about area -->
+
+      <!-- start modal area -->
+      <section class="modal-area">
+        <div
+          class="modal fade"
+          id="customModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <ul class="timeline">
+                  <li>
+                    <a class="job-title" href="#">Junior web developer</a>
+                    <a href="https://www.kean.edu/" class="float-right"
+                      >Kean University</a
+                    >
+                    <p class="para">
+                      Improved the overall aesthetic of school's landing page.
+                      <br />
+                      Added online-learning capability.
+                      <br />
+                      Experimented with online speech
+                      <a href="http://notetospeech.com/">note-taking</a>
+                      web app through the use of AWS Polly.
+                    </p>
+                  </li>
+                  <li>
+                    <a class="job-title" href="#">IT specialist</a>
+                    <a
+                      href="https://www.amazonfctours.com/EWR4"
+                      class="float-right"
+                      >Amazon EWR4</a
+                    >
+                    <p class="para">
+                      Overseered the warehouse's technology.
+                      <br />
+                      Maintained and keep all the transportation pod in working
+                      order.
+                      <br />
+                      Familiar with the AWS ecosystem.
+                    </p>
+                  </li>
+                  <li>
+                    <a class="job-title" href="#">TEAL teacher</a>
+                    <a
+                      href="https://www.microsoft.com/en-us/teals"
+                      class="float-right"
+                      >Microsoft TEAL</a
+                    >
+                    <p class="para">
+                      Part of a community that bring computer science to every
+                      high school.
+                      <br />
+                      Helped high school students familiar with coding concept
+                      by using Snap! and Python.
+                      <br />
+                      This opportunity reinfored my passion and growth as a
+                      programmer.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end modal area-->
+
+      <!-- Start Skill Area -->
+      <section class="skill-area" id="skill">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h1 class="text-uppercase title-h1">My skill sets</h1>
+            </div>
+          </div>
+
+          <!-- start skill tree full-->
+          <div class="row justify-content-center tree-full">
+            <div class="tree">
+              <ul>
+                <li>
+                  <a class="btn button secondary-button">Core programming</a>
+                  <ul>
+                    <li>
+                      <a class="btn button secondary-button">Web development</a>
+                      <ul>
+                        <li>
+                          <a class="btn button secondary-button">Front-end</a>
+                          <ul>
+                            <li>
+                              <a class="btn button secondary-button">React</a>
+                            </li>
+                            <li>
+                              <a class="btn button secondary-button">sass</a>
+                            </li>
+                            <li>
+                              <a class="btn button secondary-button">Next.js</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="btn button secondary-button">Back-end</a>
+                          <ul>
+                            <li>
+                              <a class="btn button secondary-button">Node.js</a>
+                              <ul>
+                                <li>
+                                  <a class="btn button secondary-button"
+                                    >TypeScript</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a class="btn button secondary-button">express</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <!-- second branch -->
+                    <li>
+                      <a class="btn button secondary-button"
+                        >Mobile development</a
+                      >
+                      <ul>
+                        <a class="btn button secondary-button">Flutter</a>
+                        <ul>
+                          <li>
+                            <a class="btn button secondary-button">IOS</a>
+                          </li>
+                          <li>
+                            <a class="btn button secondary-button">Android</a>
+                          </li>
+                        </ul>
+                      </ul>
+                    </li>
+                    <!-- 3rd branch -->
+                    <li>
+                      <a class="btn button secondary-button"
+                        >Server-side engineering</a
+                      >
+                      <ul>
+                        <li>
+                          <a class="btn button secondary-button"
+                            >Cloud computing</a
+                          >
+                          <ul>
+                            <li>
+                              <a class="btn button secondary-button">AWS</a>
+                            </li>
+                            <li>
+                              <a class="btn button secondary-button"
+                                >Digital Ocean</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="btn button secondary-button"
+                            >Microservice</a
+                          >
+                          <ul>
+                            <li>
+                              <a class="btn button secondary-button">Docker</a>
+                              <ul>
+                                <a class="btn button secondary-button"
+                                  >Kubernetes</a
+                                >
+                              </ul>
+                            </li>
+                            <li>
+                              <a class="btn button secondary-button"
+                                >NATS-streaming</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a class="btn button secondary-button">Block-chain</a>
+                          <ul>
+                            <a class="btn button secondary-button">Solidity</a>
+                            <ul>
+                              <li>
+                                <a class="btn button secondary-button"
+                                  >Ethereum</a
+                                >
+                              </li>
+                              <li>
+                                <a class="btn button secondary-button"
+                                  >SmartContract</a
+                                >
+                              </li>
+                            </ul>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- end skill-tree full -->
+
+          <!-- start tree-small -->
+          <div class="tree-small">
+            <div class="row justify-content-center">
+              <div class="tree">
+                <ul>
+                  <li>
+                    <a class="btn button secondary-button">Web development</a>
+                    <ul>
+                      <li>
+                        <a class="btn button secondary-button">Front-end</a>
+                        <ul>
+                          <li>
+                            <a class="btn button secondary-button">React</a>
+                          </li>
+                          <li>
+                            <a class="btn button secondary-button">sass</a>
+                          </li>
+                          <li>
+                            <a class="btn button secondary-button">Next.js</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="btn button secondary-button">Back-end</a>
+                        <ul>
+                          <li>
+                            <a class="btn button secondary-button">Node.js</a>
+                            <ul>
+                              <li>
+                                <a class="btn button secondary-button"
+                                  >TypeScript</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a class="btn button secondary-button">express</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="tree">
+                <ul>
+                  <li>
+                    <a class="btn button secondary-button"
+                      >Mobile development</a
+                    >
+                    <ul>
+                      <li>
+                        <a class="btn button secondary-button">Flutter</a>
+                        <ul>
+                          <li>
+                            <a class="btn button secondary-button">IOS</a>
+                          </li>
+                          <li>
+                            <a class="btn button secondary-button">Android</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="tree">
+                <ul>
+                  <li>
+                    <a class="btn button secondary-button"
+                      >Sever-side engineering</a
+                    >
+                    <ul>
+                      <li>
+                        <a class="btn button secondary-button"
+                          >Cloud computing</a
+                        >
+                        <ul>
+                          <li>
+                            <a class="btn button secondary-button">AWS</a>
+                          </li>
+                          <li>
+                            <a class="btn button secondary-button"
+                              >Digital Ocean</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="btn button secondary-button">Microservice</a>
+                        <ul>
+                          <li>
+                            <a class="btn button secondary-button">Docker</a>
+                            <ul>
+                              <a class="btn button secondary-button"
+                                >Kubernetes</a
+                              >
+                            </ul>
+                          </li>
+                          <li>
+                            <a class="btn button secondary-button"
+                              >NATS-streaming</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <div class="tree">
+                <ul>
+                  <li>
+                    <a class="btn button secondary-button">Block chain</a>
+                    <ul>
+                      <a class="btn button secondary-button">Solidity</a>
+                      <ul>
+                        <li>
+                          <a class="btn button secondary-button">Ethereum</a>
+                        </li>
+                        <li>
+                          <a class="btn button secondary-button"
+                            >Smart Contract</a
+                          >
+                        </li>
+                      </ul>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- end tree-small -->
+        </div>
+      </section>
+      <!-- End Skilss Area -->
+
+      <!-- Project area -->
+      <section class="project-area" id="projects">
+        <div class="container">
+          <div class="project-title pb-5">
+            <h1 class="text-uppercase title-h1">Personal projects</h1>
+          </div>
+
+          <!-- <div class="button-group">
+            <button type="button" class="active" id="btn1" data-filter="*">
+              All
+            </button>
+            <button type="button" data-filter=".finished">Finished</button>
+            <button type="button" data-filter=".upcoming">In progress</button>
+          </div> -->
+
+          <div class="row grid pt-5">
+            <div class="col-lg-4 mb-4">
+              <div class="our-project element-item">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./img/portfolio/p1-small.png"
+                    alt="VuDoGlass"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">VuDoGlass | shopping app</h5>
+                    <p class="card-text">
+                      An android shopping app demo with Firebase back-end.
+                      <br />
+                      Intergrated Oauth with Google and Facebook sign-in.
+                      <br />
+                      Utilize Shared-Preference to remember user credential.
+                    </p>
+                    <div class="text-center">
+                      <a
+                        href="https://github.com/Ogger77/VuDoGlass-android"
+                        class="btn button underline text-uppercase"
+                        >Source code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div class="our-project element-item">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./img/portfolio/poster1.png"
+                    alt="AR1"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">AR1 | image detection app</h5>
+                    <p class="card-text">
+                      An android app built with Vuforia and Unity engine.
+                      <br />
+                      Using phone's camera to differentiates U.S dollar note.
+                      <br />
+                      Part of a project which want to help vision-impared
+                      people.
+                    </p>
+                    <div class="text-center">
+                      <a
+                        href="https://docs.google.com/presentation/d/1nrGujVErc8-vC0GVgUAk_cee27SkcNlpVah6TajON6g/edit#slide=id.p1"
+                        class="btn button underline text-uppercase"
+                        >Slide</a
+                      >
+                      <a
+                        href="https://1drv.ms/u/s!AkNnyYr9mc9_iy0ljKVAaE8-8wJJ"
+                        class="btn button underline text-uppercase"
+                        >Download</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div class="our-project element-item">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./img/portfolio/p2-small.png"
+                    alt="CrowdCoin"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">CrowdCoin | block chain web app</h5>
+                    <p class="card-text">
+                      A kickstarter web demo that using ethereum as a currency
+                      of donating money.
+                      <br />
+                      User can use their ether coin to donate as well as
+                      authorize the distribution of the funds.
+                      <br />
+                      Using Metamask to access the Rinkeby test network.
+                    </p>
+                    <div class="text-center">
+                      <a
+                        href="https://crowdcoin-ogger.herokuapp.com/"
+                        class="btn button underline text-uppercase"
+                        >Demo</a
+                      >
+                      <a
+                        href="https://github.com/Ogger77/crowdcoin/"
+                        class="btn button underline text-uppercase"
+                        >Source code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div class="our-project element-item">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./img/portfolio/p5.png"
+                    alt="Galaxy Generator"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Galaxy generator | 3D-modelling</h5>
+                    <p class="card-text">
+                      A simple demo showcase the power and usability of
+                      3D-modelling in the web.
+                      <br />
+                      Built by Three.js and Webpack.
+                      <br />
+                      Mess around and have some fun with the demo :)
+                    </p>
+                    <div class="text-center">
+                      <a
+                        href="https://ogger77.github.io/galaxy-generator/"
+                        class="btn button underline text-uppercase"
+                        >Demo</a
+                      >
+                      <a
+                        href="https://github.com/Ogger77/galaxy-generator"
+                        class="btn button underline text-uppercase"
+                        >Source code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div class="our-project element-item">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./img/portfolio/p11.png"
+                    alt="Tesla Showroom"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Tesla Showroom | interactive 3D web
+                    </h5>
+                    <p class="card-text">
+                      A simple demo showcase how to implement 3D modelling into
+                      the modern web.
+                      <br />
+                      Examine the car model at different angle and colors.
+                      <br />
+                      Integrate Three.js into React with the help of
+                      React-Three-Fiber.
+                    </p>
+                    <div class="text-center">
+                      <a
+                        href="https://ogger77.github.io/tesla-showroom/"
+                        class="btn button underline text-uppercase"
+                        >Demo</a
+                      >
+                      <a
+                        href="https://github.com/Ogger77/tesla-showroom"
+                        class="btn button underline text-uppercase"
+                        >Source code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div class="our-project element-item">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./img/portfolio/p10.png"
+                    alt="Airbnb Clone"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      LinkedIn clone | social media web
+                    </h5>
+                    <p class="card-text">
+                      A clone of LinkedIn with consistent Dark and Light theme.
+                      <br />
+                      Built by Next.js with responsive design powered by
+                      tailwind.
+                      <br />
+                      Fully functional demo with realtime rendering backed by
+                      MongoDB
+                      <br />
+                      Utilize Recoil for state management.
+                    </p>
+                    <div class="text-center">
+                      <a
+                        href="https://linkedin-clone-teal.vercel.app"
+                        class="btn button underline text-uppercase"
+                        >Demo</a
+                      >
+                      <a
+                        href="https://github.com/Ogger77/linkedin-clone"
+                        class="btn button underline text-uppercase"
+                        >Source code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div class="our-project element-item">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./img/portfolio/p6.png"
+                    alt="Amazon clone"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Amazon Clone | e-commerce web</h5>
+                    <p class="card-text">
+                      A complete clone of Amazon web.
+                      <br />
+                      Built by Next.js with responsive design powered by
+                      tailwind.
+                      <br />
+                      Fully functional demo with 0auth and Stripe payment.
+                      <br />
+                      Utilize redux for card and order management.
+                    </p>
+                    <div class="text-center">
+                      <a
+                        href="https://amazon-2-0-kohl.vercel.app/"
+                        class="btn button underline text-uppercase"
+                        >Demo</a
+                      >
+                      <a
+                        href="https://github.com/Ogger77/amazon-2.0/"
+                        class="btn button underline text-uppercase"
+                        >Source code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div class="our-project element-item">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./img/portfolio/p8.png"
+                    alt="machine-learning"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Housing price model | Tensorflow</h5>
+                    <p class="card-text">
+                      A trained model based on house price data from 2014 and
+                      2015.
+                      <br />
+                      Using Seaborn plot for data visualization.
+                      <br />
+                      Trained the dataset with tensorflow and Sequential model.
+                    </p>
+                    <div class="text-center">
+                      <a
+                        href="https://github.com/Ogger77/data_science"
+                        class="btn button underline text-uppercase"
+                        >Source code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4 items-center mx-auto">
+              <div class="our-project element-item">
+                <div class="card">
+                  <img
+                    class="card-img-top"
+                    src="./img/portfolio/p4.png"
+                    alt="your table"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">yourTable | checking web app</h5>
+                    <p class="card-text">
+                      A simple application that customer use to check-in at
+                      restaurant.
+                      <br />
+                      An sms message will notify when their table is ready.
+                      <br />
+                      My graduation final projects :).
+                    </p>
+                    <div class="text-center">
+                      <a
+                        href="https://vu-yourtable.herokuapp.com/"
+                        class="btn button underline text-uppercase"
+                        >Demo</a
+                      >
+                      <a
+                        href="https://github.com/Ogger77/youTable-ver-2.0/"
+                        class="btn button underline text-uppercase"
+                        >Source code</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ENd project area -->
+    </main>
+    <!-- end main area -->
+
+    <!-- STart footer area -->
+    <footer class="footer-area">
+      <div class="headerWave" id="contact">
+        <!--Content before waves-->
+        <div class="inner-header flex">
+          <div class="container">
+            <h4 class="title-h1 pt-5">Sweet! That's all about me.</h4>
+            <div class="separator-wrapper">
+              <hr class="separator--line" />
+            </div>
+            <p class="para">
+              I'm open for new and exciting opportunities.
+              <br />
+              If you are looking for a fellow dev to collaborate. Give me a
+              holla :)
+              <br />
+              Thank you!
+            </p>
+            <div class="social text-center">
+              <p class="para">Reach me anytime at:</p>
+              <a href="https://github.com/Ogger77"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://www.facebook.com/DinhVu95/"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://www.flickr.com/photos/devinvu"
+                ><i class="fab fa-flickr"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/dinh-vu-a3a1a0123/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!--Waves Container-->
+        <div>
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(239, 65, 42, 0.7)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(239, 65, 42, 0.5)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(239, 65, 42, 0.3)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="7"
+                fill="rgba(239, 65, 42, 0.2)"
+              />
+            </g>
+          </svg>
+        </div>
+        <!--Waves end-->
+      </div>
+      <!--Header ends-->
+
+      <!--Content starts-->
+      <div class="content flex">
+        <div class="copyright text-center">
+          <p class="para footer">&copy; 2021 | Build by Dinh Vu</p>
+        </div>
+      </div>
+      <!--Content ends-->
+
+      <!-- <div class="orginal">
+        <div class="site-logo text-center py-4">
+          <a href="#">
+            <img src="./img/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="social text-center">
+          <h5 class="text-uppercase">Follow me</h5>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="copyright text-center">
+          <p class="para">
+            Copyright @2021 All rights reserved | This website is build by
+            <a href="#"
+              ><span style="color: var(--primary-color)">Dinh Vu</span>
+            </a>
+          </p>
+        </div>
+      </div> -->
+    </footer>
+
+    <!-- end footer area -->
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./plugin/isotope/isotope.js"></script>
+
+    <!-- magnific popup -->
+    <script src="./plugin/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+    <!-- owl carousel -->
+    <script src="./plugin/OwlCarousel2-2.3.4/js/owl.carousel.min.js"></script>
+    <!-- custom js -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
